@@ -1,2 +1,2 @@
 # QuartzScheduler
-Quartz Scheduler and Monitoring
+Quartz Scheduler Helper
