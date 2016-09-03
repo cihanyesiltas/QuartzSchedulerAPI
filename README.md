@@ -1,2 +1,2 @@
-# QuartzScheduler
-Quartz Scheduler Helper
+# Quartz.Net Scheduler
+Quartz.Net Scheduler Library and Web application for management
