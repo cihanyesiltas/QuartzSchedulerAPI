@@ -1,0 +1,26 @@
+﻿@using GridMvc.Html
+@model List<QuartzScheduler.Web.Models.JobTriggerViewModel>
+
+<div>
+    @Html.Grid(Model).Named("jobListGrid").Columns(columns =>
+{
+    columns.Add().Encoded(false)
+        .Sanitized(false)
+        .SetWidth(30)
+        .RenderValueAs(d => @Ajax.ActionLink(" ", "PauseJob", "Home", new { name = d.JobName, group = d.JobGroup }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "jobGrid", LoadingElementId = "spinner" }, new { @class = "btn btn-warning glyphicon glyphicon-pause" }));
+    columns.Add().Encoded(false)
+        .Sanitized(false)
+        .SetWidth(30)
+        .RenderValueAs(d => @Ajax.ActionLink(" ", "ResumeJob", "Home", new { name = d.JobName, group = d.JobGroup }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "jobGrid", LoadingElementId = "spinner" }, new { @class = "btn btn-success glyphicon glyphicon-play" }));
+    columns.Add().Encoded(false)
+      .Sanitized(false)
+      .SetWidth(30)
+      .RenderValueAs(d => @Ajax.ActionLink(" ", "RemoveJob", "Home", new { name = d.JobName, group = d.JobGroup }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "jobGrid", LoadingElementId = "spinner", Confirm = "Are you sure you want to delete job?" }, new { @class = "btn btn-danger glyphicon glyphicon-remove" }));
+    columns.Add(c => c.JobName).Titled("Job Name");
+    columns.Add(c => c.JobGroup).Titled("Job Group");
+    columns.Add(c => c.State).Titled("Status");
+    columns.Add(c => c.PreviousFireTime).Titled("Previous Fire Time");
+    columns.Add(c => c.NextFireTime).Titled("Next Fire Time");
+    columns.Add(c => c.Properties).Titled("Properties");
+}).WithPaging(10).Sortable(true).Selectable(false)
+</div>
