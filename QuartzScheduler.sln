@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzScheduler.Infrastructure", "QuartzScheduler.Infrastructure\QuartzScheduler.Infrastructure.csproj", "{268E6E98-43E2-4B15-8D52-FBCE6F4F2D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzScheduler.Test", "QuartzScheduler.Test\QuartzScheduler.Test.csproj", "{0B5299A6-7153-4959-82EA-363958955E2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzScheduler.Test.LongTimeJob", "QuartzScheduler.Test.LongTimeJob\QuartzScheduler.Test.LongTimeJob.csproj", "{2A590053-7DDA-442A-B082-3DFE89BE135D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzScheduler.Web", "QuartzScheduler.Web\QuartzScheduler.Web.csproj", "{D5659A5B-6280-475B-985A-1D22EE0F37C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{268E6E98-43E2-4B15-8D52-FBCE6F4F2D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268E6E98-43E2-4B15-8D52-FBCE6F4F2D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268E6E98-43E2-4B15-8D52-FBCE6F4F2D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268E6E98-43E2-4B15-8D52-FBCE6F4F2D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B5299A6-7153-4959-82EA-363958955E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5299A6-7153-4959-82EA-363958955E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5299A6-7153-4959-82EA-363958955E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5299A6-7153-4959-82EA-363958955E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A590053-7DDA-442A-B082-3DFE89BE135D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A590053-7DDA-442A-B082-3DFE89BE135D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A590053-7DDA-442A-B082-3DFE89BE135D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A590053-7DDA-442A-B082-3DFE89BE135D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5659A5B-6280-475B-985A-1D22EE0F37C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5659A5B-6280-475B-985A-1D22EE0F37C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5659A5B-6280-475B-985A-1D22EE0F37C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5659A5B-6280-475B-985A-1D22EE0F37C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
