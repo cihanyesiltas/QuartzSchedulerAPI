@@ -180,7 +180,7 @@ namespace QuartzScheduler.Infrastructure
 
             if (jobProperties != null && jobProperties.Count > 0)
                 triggerBuilder.UsingJobData(new JobDataMap(jobProperties));
-            
+
             var trigger = triggerBuilder.Build();
 
             _scheduler.ScheduleJob(jobDetail, trigger);

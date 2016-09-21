@@ -15,28 +15,9 @@
 @model List<QuartzScheduler.Web.Models.JobTriggerViewModel>
 <img id="spinner" src="~/Content/ajax-loader.gif" style="display: none; position: fixed; top: 50%; left: 50%; margin-top: -50px; margin-left: -100px;" />
 <div>
-    <div>
-        <h2>Job Trigger List</h2>
-        <div id="jobGrid">
-            @{Html.RenderAction("JobList", "Home");}
-        </div>
-    </div>
-    <div class="operationGroup">
-        @Ajax.ActionLink("Pause All", "PauseAll", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "jobGrid", LoadingElementId = "spinner" }, new { @class = "btn btn-primary" })
-        @Ajax.ActionLink("Resume All", "ResumeAll", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "jobGrid", LoadingElementId = "spinner" }, new { @class = "btn btn-primary" })
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addJobModal">Add Job</button>
+    <div id="jobGrid">
+        @{Html.RenderAction("JobList", "Home");}
     </div>
 </div>
 
 @Html.Partial("AddJob")
-
-<script type="text/javascript">
-
-    $(function () {
-        $('#addJobModal').modal({
-            backdrop: true,
-            keyboard: false,
-            show: false
-        });
-    });
-</script>

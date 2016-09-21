@@ -13,17 +13,17 @@ namespace QuartzScheduler.Infrastructure
 
         public void JobExecutionVetoed(IJobExecutionContext context)
         {
-            File.AppendAllText(@"C:\Users\cihan.yesiltas\Desktop\test.txt", "Vetoed  ");
+            File.AppendAllText(@"C:\temp\test.txt", "Vetoed  ");
         }
 
         public void JobToBeExecuted(IJobExecutionContext context)
         {
-            File.AppendAllText(@"C:\Users\cihan.yesiltas\Desktop\test.txt", "ToBeExecuted  ");
+            File.AppendAllText(@"C:\temp\test.txt", "ToBeExecuted  ");
         }
 
         public void JobWasExecuted(IJobExecutionContext context, JobExecutionException jobException)
         {
-            File.AppendAllText(@"C:\Users\cihan.yesiltas\Desktop\test.txt", "Executed  ");
+            File.AppendAllText(@"C:\temp\test.txt", "Executed  ");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace QuartzScheduler.Web.Controllers
 
         public PartialViewResult JobList()
         {
-            var jobs = GetAllJobs2();
+            var jobs = GetAllJobs();
             return PartialView(jobs);
         }
 
@@ -79,7 +79,7 @@ namespace QuartzScheduler.Web.Controllers
                         try
                         {
                             string[] splitted = keyVal.Split('=');
-                            properties.Add(splitted[0], splitted[1]);
+                            properties.Add(splitted[0].Replace(" ",""), splitted[1]);
                         }
                         catch (Exception){}
                     }
@@ -97,7 +97,7 @@ namespace QuartzScheduler.Web.Controllers
 
         #region Private methods
 
-        private List<JobTriggerViewModel> GetAllJobs2()
+        private List<JobTriggerViewModel> GetAllJobs()
         {
             var jobTriggers = new List<JobTriggerViewModel>();
             try

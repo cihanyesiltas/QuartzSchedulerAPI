@@ -19,10 +19,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/21/2016 19:47:28</publishTime>
     </File>
     <File Include="bin/Common.Logging.Core.dll">
-      <publishTime>07/24/2016 12:51:47</publishTime>
+      <publishTime>09/04/2016 12:46:38</publishTime>
     </File>
     <File Include="bin/Common.Logging.dll">
-      <publishTime>07/24/2016 12:51:48</publishTime>
+      <publishTime>09/04/2016 12:46:40</publishTime>
     </File>
     <File Include="bin/GridMvc.dll">
       <publishTime>08/22/2016 10:55:57</publishTime>
@@ -58,13 +58,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/21/2016 19:47:15</publishTime>
     </File>
     <File Include="bin/Quartz.dll">
-      <publishTime>08/21/2016 17:37:14</publishTime>
+      <publishTime>09/05/2016 09:58:02</publishTime>
     </File>
     <File Include="bin/QuartzScheduler.Infrastructure.dll">
-      <publishTime>09/03/2016 15:04:16</publishTime>
+      <publishTime>09/13/2016 13:24:02</publishTime>
     </File>
     <File Include="bin/QuartzScheduler.Web.dll">
-      <publishTime>09/03/2016 15:19:18</publishTime>
+      <publishTime>09/13/2016 13:24:07</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/21/2016 19:47:16</publishTime>
@@ -235,13 +235,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/29/2016 17:11:04</publishTime>
     </File>
     <File Include="Views/Home/AddJob.cshtml">
-      <publishTime>09/03/2016 14:58:12</publishTime>
+      <publishTime>09/13/2016 14:57:17</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>09/03/2016 14:02:33</publishTime>
+      <publishTime>09/13/2016 14:56:26</publishTime>
     </File>
     <File Include="Views/Home/JobList.cshtml">
-      <publishTime>09/03/2016 15:15:13</publishTime>
+      <publishTime>09/13/2016 14:56:32</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>08/21/2016 19:47:05</publishTime>
@@ -256,7 +256,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 10:55:58</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/24/2016 11:30:14</publishTime>
+      <publishTime>09/03/2016 21:48:16</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>08/21/2016 20:28:13</publishTime>
@@ -265,7 +265,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 19:09:04</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/01/2016 18:36:00</publishTime>
+      <publishTime>09/13/2016 13:24:07</publishTime>
     </File>
   </ItemGroup>
 </Project>

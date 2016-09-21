@@ -110,7 +110,7 @@
 </div>
 
 <!-- Modal for displaying the error messages -->
-<div class="modal fade" id="messageModal">
+<div class="modal fade" id="messageModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body alert-danger">
@@ -162,6 +162,14 @@
             $("#jobPropertyDiv" + counter).remove();
             counter--;
             return false;
+        });
+    });
+
+    $(function () {
+        $('#addJobModal').modal({
+            backdrop: true,
+            keyboard: true,
+            show: false
         });
     });
 </script>
