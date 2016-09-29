@@ -17,8 +17,9 @@ namespace QuartzScheduler.Test
 
             IJobScheduler jobScheduler = JobSchedulerFactory.CreateJobScheduler(conn);
 
-            var lis=jobScheduler.GetCurrentlyExecutingJobs();
+           // var lis=jobScheduler.GetCurrentlyExecutingJobs();
             var metadata = jobScheduler.GetMetaData();
+            jobScheduler.GetAllJobs();
             jobScheduler.ScheduleJob("LongJob", "LongJob", "0 0/1 * 1/1 * ? *");
             jobScheduler.DeleteJob("LongJob", "LongJob");
 

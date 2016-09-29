@@ -11,7 +11,7 @@ namespace QuartzScheduler.Infrastructure
             get { return "MyJobListener"; }
         }
 
-        public void JobExecutionVetoed(IJobExecutionContext context)
+       public void JobExecutionVetoed(IJobExecutionContext context)
         {
             File.AppendAllText(@"C:\temp\test.txt", "Vetoed  ");
         }

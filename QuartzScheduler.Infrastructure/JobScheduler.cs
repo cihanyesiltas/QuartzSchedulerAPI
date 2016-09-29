@@ -74,6 +74,7 @@ namespace QuartzScheduler.Infrastructure
                     var triggers = _scheduler.GetTriggersOfJob(jobKey);
                     foreach (var trigger in triggers)
                     {
+                        var cronTrigger = trigger as ICronTrigger;
                         var nextFireTime = trigger.GetNextFireTimeUtc();
                         var previousFireTime = trigger.GetPreviousFireTimeUtc();
                         job.Triggers.Add(new Trigger
@@ -88,6 +89,7 @@ namespace QuartzScheduler.Infrastructure
                             PreviousFireTime = previousFireTime.HasValue
                                 ? TimeZone.CurrentTimeZone.ToLocalTime(previousFireTime.Value.DateTime)
                                 : DateTime.MinValue,
+                            CronExpression = cronTrigger?.CronExpressionString,
                             DataMap = trigger.JobDataMap
                         });
                     }

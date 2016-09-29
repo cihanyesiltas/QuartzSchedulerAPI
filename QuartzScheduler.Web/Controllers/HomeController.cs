@@ -114,6 +114,7 @@ namespace QuartzScheduler.Web.Controllers
                         State = trigger.State,
                         NextFireTime = trigger.NextFireTime,
                         PreviousFireTime = trigger.PreviousFireTime,
+                        CronExpression = trigger.CronExpression,
                         Properties =
                             trigger.DataMap != null
                                 ? string.Join(";", trigger.DataMap.Select(x => x.Key + "=" + x.Value).ToArray())
